@@ -1,5 +1,6 @@
 import { AppStateProvider } from 'app-state';
 import './globals.css';
+import "./Feature.css";
 import Providers from './providers';
 
 export default async function RootLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {

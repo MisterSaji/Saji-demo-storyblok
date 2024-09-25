@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { getStoryblokApi, ISbStoriesParams } from "@storyblok/react/rsc";
 import StoryblokStory from "@storyblok/react/story";
+import './Footer.css';
 
 type Props = {
   params: { locale: string };
@@ -21,10 +22,12 @@ const Home: NextPage<Props> = async ({ params: { locale } }) => {
   return (
     <div>
       <h1>{data.story.name}</h1>
-      <h2>Dit is een test</h2>
+      <footer>Dit is een footer</footer>
       <StoryblokStory story={data.story} />
     </div>
   );
 };
+
+
 
 export default Home;
